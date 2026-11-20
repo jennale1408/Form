@@ -1,0 +1,31 @@
+:root {}
+
+* {
+    margin: 0px auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mytextbox {
+    color: #000;
+    background-color: #F8CED7;
+    border: 1px solid #F0B7CD;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.form1 table {
+    border: 5px groove #D6E3CE;
+    background-color: #ffdddd;
+    color: #000;
+}
+
+#form1 table td {
+    border: 1px solid #cc9999;
+}
+
+.button-style {
+    background-color: #ffdddd;
+    border: 1px solid #D6E3CE;
+    border-radius: 5px 5px 5px 5px;
+}
