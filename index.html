@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form1">
+        <table cellpadding="8" border="2" width="900" cellspacing="10">
+            <caption> ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC </caption>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input class="mytextbox" type="text" id="txtHoTen">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td>
+                    <input class="mytextbox" type="text" id="txtUserName">
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td>
+                    <input class="mytextbox" type="password" id="txtPass">
+                </td>
+            </tr>
+            <tr>
+                <td>Gõ lại mật khẩu</td>
+                <td>
+                    <input class="mytextbox" type="password" id="txtRePass">
+                </td>
+            </tr>
+            <tr>
+                <td>Độ tuổi</td>
+                <td>
+                    <input class="mytextbox" type="text" id="txtDoTuoi" min="18" max="45" value="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" id="radNam" name="rdGioiTinh" value="Nam" checked>
+                    <label for="radNam">Nam</label>
+                    <input type="radio" id="radNu" name="rdGioiTinh" value="Nữ">
+                    <label for="radNu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td>
+                    <input type="checkbox" id="chkAnh" name="chkAnh" value="Anh">
+                    <label for="chkAnh">Anh văn</label>
+                    <input type="checkbox" id="chkPhap" name="chkPhap" value="Pháp">
+                    <label for="chkPhap">Pháp Văn</label>
+                    <input type="checkbox" id="chkHoa" name="chkHoa" value="Hoa">
+                    <label for="chkHoa">Hoa văn</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select class="mytextbox" id="cboNgheNghiep" name="cboNgheNghiep">
+                        <option value="0">Bạn làm nghề gì</option>
+                        <option value="1"> Học sinh - Sinh viên</option>
+                        <option value="2">Giáo viên</option>
+                        <option value="3">Nhân viên</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thành phố</td>
+                <td>
+                    <input class="mytextbox" id="txtThanhPho" list="dsThanhPho">
+                    <datalist id="dsThanhPho">
+                        <option value="Hồ Chí Minh"> Hồ Chí minh</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Đà Lạt"> Đà Lạt </option>
+                        <option value="Nha Trang"> Nha Trang </option>
+                    </datalist>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Hình</td>
+                <td>
+                    <input class="mytextbox" type="file" id="fHinh" name="fHinh">
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <TextArea class="mytextbox" id="txtSoThich"></TextArea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input class="button-style" type="submit" id="btnDangky" value="Đăng ký">
+                    <input class="button-style" type="reset" id="btnXoa" value="Làm lại">
+                    <input class="button-style" type="hidden" name="NgayDangKy" value="03/23/2023">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
